@@ -1,0 +1,135 @@
+/* Garante alinhamento exato entre inputs e botões */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* Aplica a cor de fundo no corpo da página inteira */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #0d1f1a; /* verde petróleo escuro */
+}
+
+/* Garante que a div principal ocupe toda a altura também */
+.form-wrapper {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent; /* deixar transparente para mostrar o fundo */
+}
+
+
+/* Container com fundo preto e tons verdes */
+.form-box {
+  width: 420px;
+  padding: 40px;
+  background-color: #1c1c1c;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 255, 153, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+.form-box:hover {
+  box-shadow: 0 15px 30px rgba(0, 255, 153, 0.2);
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #c4f8d4;
+}
+
+/* Inputs */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+button {
+  width: 100%;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  padding: 12px;
+  margin-bottom: 12px;
+  border-radius: 10px;
+  border: 1px solid #333;
+  background-color: #222;
+  color: #d9fbe5;
+  box-shadow: inset 0 1px 3px rgba(0, 255, 153, 0.1);
+  transition: border 0.2s;
+}
+
+input::placeholder {
+  color: #a0bfae;
+}
+
+input:focus {
+  border-color: #00ff99;
+  outline: none;
+}
+
+/* Corrigir alinhamento dos campos com botão */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+}
+
+/* Botões com efeito de profundidade */
+button {
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 0 5px 10px rgba(0, 255, 153, 0.1);
+  transition: transform 0.1s ease, box-shadow 0.2s ease;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0, 255, 153, 0.2);
+}
+
+button:active {
+  transform: translateY(1px);
+}
+
+/* Botão principal */
+button:not(.google):not(.facebook) {
+  background-color: #00cc88;
+  color: white;
+}
+
+/* Botões sociais */
+button.google,
+button.facebook {
+  background-color: #333;
+  color: #d9fbe5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+/* Texto "OR" */
+.or {
+  text-align: center;
+  margin: 15px 0;
+  color: #888;
+}
+
+/* Link */
+a {
+  color: #00ff99;
+  text-decoration: none;
+  font-weight: bold;
+}

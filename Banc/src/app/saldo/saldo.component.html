@@ -1,0 +1,11 @@
+
+<div class="saldo-box">
+  <div>Saldo:</div>
+  <div>
+    <span *ngIf="visivel">{{ saldo | currency:'BRL' }}</span>
+    <span *ngIf="!visivel">****</span>
+  </div>
+  <button (click)="toggleVisibilidade()">
+    {{ visivel ? 'Esconder' : 'Ver' }}
+  </button>
+</div>

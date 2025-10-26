@@ -1,0 +1,14 @@
+.saldo-box {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: white;
+  border: 1px solid #ccc;
+  padding: 12px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.2);
+  border-radius: 8px;
+  z-index: 1000;
+}
+button {
+  margin-top: 8px;
+}

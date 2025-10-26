@@ -1,0 +1,18 @@
+<div class="topbar">
+  <div class="logo">
+    <img src="favicon.ico" alt="Logo" />
+  </div>
+
+  <div class="menu-icons">
+    <ul>
+      <li 
+        *ngFor="let icon of icons" 
+        [class.active]="activeIcon === icon.name"
+        (click)="setActiveIcon(icon.name, icon.route)">
+        <img class="icons" [src]="icon.src" [alt]="icon.name" />
+      </li>
+    </ul>
+  </div>
+  
+</div>
+<router-outlet></router-outlet>

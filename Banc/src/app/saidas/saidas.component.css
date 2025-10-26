@@ -1,0 +1,100 @@
+.dark-table-wrapper {
+  background-color: #12151f;
+  padding: 2rem;
+  color: #e0e0e0;
+}
+
+.dark-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 12px;
+  
+
+  th {
+    background-color: transparent;
+    color: #9e9e9e;
+    font-weight: 500;
+    font-size: 14px;
+    text-transform: uppercase;
+    padding: 12px;
+  }
+
+  td {
+    background-color: #1d212e;
+    color: #ffffff;
+    font-size: 14px;
+    padding: 16px;
+    border-radius: 10px;
+
+    &:first-child {
+      border-top-left-radius: 10px;
+      border-bottom-left-radius: 10px;
+    }
+
+    &:last-child {
+      border-top-right-radius: 10px;
+      border-bottom-right-radius: 10px;
+    }
+  }
+
+  .mat-icon {
+    font-size: 20px;
+  }
+
+  .row-item {
+    transition: transform 0.2s ease;
+    &:hover {
+      transform: scale(1.01);
+      background-color: #222;
+    }
+  }
+}
+
+mat-paginator {
+  background-color: #1d212e;
+  color: #e0e0e0;
+  border-radius: 0 0 12px 12px;
+  margin-top: 1rem;
+}
+/* Cor de fundo da célula de ações */
+.acoes-cell {
+  background-color: rgba(0, 0, 0, 0.1); /* ajuste conforme necessário */
+  padding: 8px;
+}
+
+/* Espaçamento e cor da barra separadora */
+.barra {
+  margin: 0 8px;
+  color: #ccc;
+}
+
+/* Estilo dos links de ação */
+.edit {
+  color: #26a65b;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.delete {
+  color: #ff3c00;
+  text-decoration: none;
+  cursor: pointer;
+}
+.formulario {
+  display: flex;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+input, button {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  cursor: pointer;
+}
+
